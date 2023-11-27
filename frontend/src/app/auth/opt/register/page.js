@@ -1,12 +1,12 @@
 // sections
-import { JwtRegisterView } from 'src/sections/auth/jwt';
+import { OptRegisterView } from 'src/sections/auth/opt';
 
 // ----------------------------------------------------------------------
 
 export const metadata = {
-  title: 'Jwt: Register',
+  title: 'Keyword Boom Register',
 };
 
 export default function RegisterPage() {
-  return <JwtRegisterView />;
+  return <OptRegisterView />;
 }

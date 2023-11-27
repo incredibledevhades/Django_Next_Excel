@@ -11,9 +11,9 @@ export const paths = {
   minimalUI: 'https://mui.com/store/items/minimal-dashboard/',
   // AUTH
   auth: {
-    jwt: {
-      login: `${ROOTS.AUTH}/jwt/login`,
-      register: `${ROOTS.AUTH}/jwt/register`,
+    opt: {
+      login: `${ROOTS.AUTH}/opt/login`,
+      register: `${ROOTS.AUTH}/opt/register`,
     },
   },
   // DASHBOARD

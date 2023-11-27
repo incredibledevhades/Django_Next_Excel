@@ -41,7 +41,7 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware'
 ]
 
 ROOT_URLCONF = 'config.urls'
@@ -82,6 +82,9 @@ DATABASES = {
         'PASSWORD': 'root1234',
         'HOST': 'localhost',   # Set to your MySQL server host
         'PORT': '3306',        # Set to your MySQL server port
+        'OPTIONS': {
+            'sql_mode': 'STRICT_TRANS_TABLES'
+        }
     }
 }
 
@@ -137,7 +140,9 @@ REST_FRAMEWORK = {
 # https://pypi.org/project/django-cors-headers/
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:8000',
-    'http://localhost:3000',
+    'http://localhost:3034',
     'http://127.0.0.1:8000',
-    'http://127.0.0.1:3000',
+    'http://127.0.0.1:3034',
 ]
+
+CORS_ALLOW_ALL_ORIGINS = True
